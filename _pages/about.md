@@ -19,38 +19,51 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-<script>
-  const text = "Hello 👋!";
-  const typingSpeed = 100; // milliseconds per character
-  let i = 0;
+<div class="typing-container">
+  <p id="typing-effect-hello"></p>
+  <p id="typing-effect-intro"></p>
+</div>
 
-  function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("typing-effect").textContent += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, typingSpeed);
+<script>
+  // First typing effect for "Hello 👋!"
+  const textHello = "Hello 👋!";
+  const typingSpeedHello = 100; // milliseconds per character
+  let iHello = 0;
+
+  function typeWriterHello() {
+    if (iHello < textHello.length) {
+      document.getElementById("typing-effect-hello").textContent += textHello.charAt(iHello);
+      iHello++;
+      setTimeout(typeWriterHello, typingSpeedHello);
     }
   }
 
-  document.addEventListener("DOMContentLoaded", typeWriter);
-</script>
+  document.addEventListener("DOMContentLoaded", typeWriterHello);
 
-
-> <div class="typing-container">
-    <p id="typing-effect"></p>
-  </div>
-
-<script>
-  const text = "I'm **William**. I'm an avid ML researcher and developer broadly interested in intelligent robotics, computer vision, and embedded systems. Currently modeling human behavior within serialized media industries.";
-  const typingSpeed = 50; // milliseconds per character
-  let i = 0;
+  // Second typing effect with bold text
+  const textIntro =
+    "I'm **William**. I'm an avid ML researcher and developer broadly interested in intelligent robotics, computer vision, and embedded systems. Currently modeling human behavior within serialized media industries.";
+  const typingSpeedIntro = 50; // milliseconds per character
+  let iIntro = 0;
+  let bold = false;
 
   function typeWriterIntro() {
-    if (i < text.length) {
-      document.getElementById("typing-effect").innerHTML += text.charAt(i) === "*" 
-        ? "<b>" : text.charAt(i) === "*" ? "</b>" : text.charAt(i);
-      i++;
-      setTimeout(typeWriterIntro, typingSpeed);
+    if (iIntro < textIntro.length) {
+      const char = textIntro.charAt(iIntro);
+      const typingEffectIntro = document.getElementById("typing-effect-intro");
+
+      if (char === "*" && !bold) {
+        typingEffectIntro.innerHTML += "<b>";
+        bold = true;
+      } else if (char === "*" && bold) {
+        typingEffectIntro.innerHTML += "</b>";
+        bold = false;
+      } else {
+        typingEffectIntro.innerHTML += char;
+      }
+
+      iIntro++;
+      setTimeout(typeWriterIntro, typingSpeedIntro);
     }
   }
 
@@ -63,13 +76,14 @@ social: true # includes social icons at the bottom of the page
     font-size: 1rem;
     color: #333;
     white-space: nowrap; /* Prevents line breaks during typing */
-    overflow: hidden;    /* Hides text that's not fully typed */
-    border-left: 4px solid #ddd; /* Simulates the block quote's styling */
+    overflow: hidden; /* Hides text that's not fully typed */
+    border-left: 4px solid #ddd; /* Simulates block quote styling */
     padding-left: 10px;
   }
 
   @keyframes blink-caret {
-    from, to {
+    from,
+    to {
       border-color: transparent;
     }
     50% {
@@ -77,6 +91,7 @@ social: true # includes social icons at the bottom of the page
     }
   }
 </style>
+
 
 
 Previously @:
