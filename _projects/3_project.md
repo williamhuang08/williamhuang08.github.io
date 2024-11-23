@@ -2,7 +2,7 @@
 layout: page
 title: Inverse Reinforcement Learning for eBook Services
 description: reinforcement learning, adversarial learning, reward function optimization
-img: assets/img/7.jpg
+img: assets/img/irl_books.jpg
 redirect: https://github.com/williamhuang08/Inverse-Reinforcement-Learning-For-eBooks
 importance: 3
 category: ML
