@@ -19,10 +19,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-<div class="typing-container">
-  <h2 id="typing-effect"></h2>
-</div>
-
 <script>
   const text = "Hello 👋!";
   const typingSpeed = 100; // milliseconds per character
@@ -39,22 +35,6 @@ social: true # includes social icons at the bottom of the page
   document.addEventListener("DOMContentLoaded", typeWriter);
 </script>
 
-
-<script>
-  const text = "Hello 👋!";
-  const typingSpeed = 100; // milliseconds per character
-  let i = 0;
-
-  function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("typing-effect").textContent += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, typingSpeed);
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", typeWriter);
-</script>
 
 > <div class="typing-container">
     <p id="typing-effect"></p>
@@ -65,16 +45,16 @@ social: true # includes social icons at the bottom of the page
   const typingSpeed = 50; // milliseconds per character
   let i = 0;
 
-  function typeWriter() {
+  function typeWriterIntro() {
     if (i < text.length) {
       document.getElementById("typing-effect").innerHTML += text.charAt(i) === "*" 
         ? "<b>" : text.charAt(i) === "*" ? "</b>" : text.charAt(i);
       i++;
-      setTimeout(typeWriter, typingSpeed);
+      setTimeout(typeWriterIntro, typingSpeed);
     }
   }
 
-  document.addEventListener("DOMContentLoaded", typeWriter);
+  document.addEventListener("DOMContentLoaded", typeWriterIntro);
 </script>
 
 <style>
