@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 
 <div class="typing-container">
   <p id="typing-effect-hello"></p>
-  <p id="typing-effect-intro"></p>
+  <!-- <p id="typing-effect-intro"></p> -->
 </div>
 
 <script>
@@ -40,59 +40,59 @@ social: true # includes social icons at the bottom of the page
 
   document.addEventListener("DOMContentLoaded", typeWriterHello);
 
-  // Second typing effect with bold text
-  const textIntro =
-    "I'm **William**. I'm an avid ML researcher and developer broadly interested in intelligent robotics, computer vision, and embedded systems. Currently modeling human behavior within serialized media industries.";
-  const typingSpeedIntro = 50; // milliseconds per character
-  let iIntro = 0;
-  let bold = false;
+//   // Second typing effect with bold text
+//   const textIntro =
+//     "I'm **William**. I'm an avid ML researcher and developer broadly interested in intelligent robotics, computer vision, and embedded systems. Currently modeling human behavior within serialized media industries.";
+//   const typingSpeedIntro = 50; // milliseconds per character
+//   let iIntro = 0;
+//   let bold = false;
 
-  function typeWriterIntro() {
-    if (iIntro < textIntro.length) {
-      const char = textIntro.charAt(iIntro);
-      const typingEffectIntro = document.getElementById("typing-effect-intro");
+//   function typeWriterIntro() {
+//     if (iIntro < textIntro.length) {
+//       const char = textIntro.charAt(iIntro);
+//       const typingEffectIntro = document.getElementById("typing-effect-intro");
 
-      if (char === "*" && !bold) {
-        typingEffectIntro.innerHTML += "<b>";
-        bold = true;
-      } else if (char === "*" && bold) {
-        typingEffectIntro.innerHTML += "</b>";
-        bold = false;
-      } else {
-        typingEffectIntro.innerHTML += char;
-      }
+//       if (char === "*" && !bold) {
+//         typingEffectIntro.innerHTML += "<b>";
+//         bold = true;
+//       } else if (char === "*" && bold) {
+//         typingEffectIntro.innerHTML += "</b>";
+//         bold = false;
+//       } else {
+//         typingEffectIntro.innerHTML += char;
+//       }
 
-      iIntro++;
-      setTimeout(typeWriterIntro, typingSpeedIntro);
-    }
-  }
+//       iIntro++;
+//       setTimeout(typeWriterIntro, typingSpeedIntro);
+//     }
+//   }
 
-  document.addEventListener("DOMContentLoaded", typeWriterIntro);
-</script>
+//   document.addEventListener("DOMContentLoaded", typeWriterIntro);
+<!-- // </script>
 
-<style>
-  .typing-container {
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    color: #333;
-    white-space: nowrap; /* Prevents line breaks during typing */
-    overflow: hidden; /* Hides text that's not fully typed */
-    border-left: 4px solid #ddd; /* Simulates block quote styling */
-    padding-left: 10px;
-  }
+// <style>
+//   .typing-container {
+//     font-family: Arial, sans-serif;
+//     font-size: 1rem;
+//     color: #333;
+//     white-space: nowrap; /* Prevents line breaks during typing */
+//     overflow: hidden; /* Hides text that's not fully typed */
+//     border-left: 4px solid #ddd; /* Simulates block quote styling */
+//     padding-left: 10px;
+//   }
 
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: black;
-    }
-  }
-</style>
+//   @keyframes blink-caret {
+//     from,
+//     to {
+//       border-color: transparent;
+//     }
+//     50% {
+//       border-color: black;
+//     }
+//   }
+// </style> -->
 
-
+> I'm **William**. I'm an avid ML researcher and developer broadly interested in intelligent robotics, computer vision, and embedded systems. Currently modeling human behavior within serialized media industries.
 
 Previously @:
 - **[Yale School of Management](https://som.yale.edu/)** (Tobin Undergraduate Research Assistant - under Prof. Wang Tong)
