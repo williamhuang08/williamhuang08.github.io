@@ -19,7 +19,25 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-## Hello 👋!
+<div class="typing-container">
+  <h2 id="typing-effect"></h2>
+</div>
+
+<script>
+  const text = "Hello 👋!";
+  const typingSpeed = 100; // milliseconds per character
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typing-effect").textContent += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, typingSpeed);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", typeWriter);
+</script>
 
 > I'm **William**. I'm an avid ML researcher and developer broadly interested in intelligent robotics, computer vision, and embedded systems. Currently modeling human behavior within serialized media industries.
 
