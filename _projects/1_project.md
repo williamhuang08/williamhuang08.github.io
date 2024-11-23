@@ -5,7 +5,7 @@ description: color depth mapping, region-contrast saliency maps
 img: assets/img/image_optimization.jpg
 redirect: https://github.com/williamhuang08/Image-Optimization-Framework-for-Retinal-Prostheses
 importance: 1
-category: ML
+category: computer vision
 related_publications: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Inverse Reinforcement Learning for eBook Services
+title: Inverse Reinforcement Learning to Decode Human Behavior within eBook Services
 description: reinforcement learning, adversarial learning, reward function optimization
 img: assets/img/irl_books.jpg
 redirect: https://github.com/williamhuang08/Inverse-Reinforcement-Learning-For-eBooks

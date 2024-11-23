@@ -5,7 +5,7 @@ description: computational geometry, autoencoders
 img: assets/img/image_magnification.jpg
 redirect: https://github.com/williamhuang08/Argus-III
 importance: 2
-category: ML
+category: computer vision
 giscus_comments: true
 ---
 

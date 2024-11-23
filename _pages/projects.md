@@ -5,7 +5,7 @@ permalink: /projects/
 description: some things i find cool
 nav: true
 nav_order: 3
-display_categories: [ML, fun]
+display_categories: [computer vision, computational cognitive science, fun]
 horizontal: false
 ---
 
