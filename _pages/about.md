@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 
 ## Hello 👋!
 
-> I'm **William Huang**. I'm an avid ML researcher and developer broadly interested in intelligent robotics, computer vision, and embedded systems. Currently modeling human behavior within serialized media industries.
+> I'm **William**. I'm an avid ML researcher and developer broadly interested in intelligent robotics, computer vision, and embedded systems. Currently modeling human behavior within serialized media industries.
 
 Previously @:
 - **[Yale School of Management](https://som.yale.edu/)** (Tobin Undergraduate Research Assistant - under Prof. Wang Tong)

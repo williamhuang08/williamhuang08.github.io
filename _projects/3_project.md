@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
+title: Inverse Reinforcement Learning for eBook Services
+description: reinforcement learning, adversarial learning, reward function optimization
 img: assets/img/7.jpg
-redirect: https://unsplash.com
+redirect: https://github.com/williamhuang08/Inverse-Reinforcement-Learning-For-eBooks
 importance: 3
-category: work
+category: ML
 ---
 
 Every project has a beautiful feature showcase page.

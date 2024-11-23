@@ -1,8 +1,9 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Personal Website
+description:
+img: assets/img/personal_website.jpg
+redirect: https://github.com/williamhuang08/williamhuang08.github.io
 importance: 3
 category: fun
 ---

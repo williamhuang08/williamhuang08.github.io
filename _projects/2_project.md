@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Image Magnification for Retinal Prostheses
+description: computational geometry, autoencoders
+img: assets/img/image_magnification.jpg
 importance: 2
-category: work
+category: ML
 giscus_comments: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Image Optimization for Retinal Prostheses
+description: color depth mapping, region-contrast saliency maps
+img: assets/img/image_optimization.jpg
 importance: 1
-category: work
+category: ML
 related_publications: true
 ---
 
