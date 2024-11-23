@@ -5,7 +5,7 @@ description: reinforcement learning, adversarial learning, reward function optim
 img: assets/img/irl_books.jpg
 redirect: https://github.com/williamhuang08/Inverse-Reinforcement-Learning-For-eBooks
 importance: 3
-category: ML
+category: computational cognitive science
 ---
 
 Every project has a beautiful feature showcase page.
