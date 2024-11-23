@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 
 ## Hello! 
 
-> My name is __William Huang__. I'm an avid ML researcher and developer broadly interested in intelligent robotics, computer vision, and embedded systems. Currently modeling human behavior within serialized media industries. 
+
 
 See my [publications](https://scholar.google.com/citations?user=cinjCSwAAAAJ&hl=en&authuser=1) and [code](https://github.com/williamhuang08).
 
