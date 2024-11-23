@@ -3,7 +3,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Sophomore @ Yale '27 | CS + ML Research.
+subtitle: Sophomore @ Yale '27 | CS + Math
 
 profile:
   align: right
