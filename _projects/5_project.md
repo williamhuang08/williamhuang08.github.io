@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
+title: Inverse Reinforcement Learning for Robotic Control (in progress)
+description: robotic simulations, policy optimization
+img: assets/img/robot_control.jpg
+redirect: https://github.com/williamhuang08/Reinforcement-Learning-for-Robot-Control
 importance: 3
-category: 
+category: intelligent robotics
 ---
 
 Every project has a beautiful feature showcase page.
