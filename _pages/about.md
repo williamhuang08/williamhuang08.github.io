@@ -3,7 +3,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Sophomore @ Yale '27 | CS + Math
+subtitle: Junior @ Yale '27 | Math + CS
 
 profile:
   align: right
@@ -39,9 +39,10 @@ social: true # includes social icons at the bottom of the page
   document.addEventListener("DOMContentLoaded", typeWriter);
 </script>
 
-> I'm **William**. I'm an avid researcher and developer who is interested in realizing Physical AI.  More specifically, I'm passionate about intelligent robotics, computer vision, and computational cognitive science. I am currently investigating how inverse reinforcement learning can be used to model human behavior within serialized media industries.
+> I'm **William**. I'm an avid researcher and developer who is interested in realizing Physical AI.  More specifically, I'm passionate about intelligent robotics and AI for science. More coming soon!
 
 Previously @:
+- **[iCapital](https://icapital.com/)** (Platform Engineering Intern)
 - **[Yale School of Management](https://som.yale.edu/)** (Tobin Undergraduate Research Assistant - under Prof. Wang Tong and Prof K. Sudhir)
 - **[OptoKnowledge Systems Inc.](https://oksi.ai/)** (Applied AI/ML Software Engineer Intern)
 - **[University of Southern California Melady Lab](https://melady.usc.edu/)** (ML Research Intern - under Prof. Yan Liu); as a USC-Meta SURE Fellow.
