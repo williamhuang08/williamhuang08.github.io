@@ -7,7 +7,7 @@ subtitle: Junior @ Yale '27 | Math + CS
 
 profile:
   align: right
-  image: casual_pic2.jpg
+  image: iCapital_headshot.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Silliman College</p>
