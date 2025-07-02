@@ -5,7 +5,7 @@ permalink: /projects/
 description: some things i find cool
 nav: true
 nav_order: 3
-display_categories: [computer vision, computational cognitive science, intelligent robotics, fun]
+display_categories: [computer vision, reinforcement learning, intelligent robotics, fun]
 horizontal: false
 ---
 
