@@ -41,14 +41,21 @@
           </p>
         </div>
 
-        {% if page.portrait %}
-          <img
-            class="portrait"
-            src="{{ page.portrait | prepend: '/assets/img/' | relative_url }}"
-            alt="Portrait of {{ site.first_name }} {{ site.last_name }}"
-            width="192"
-            height="192"
-          >
+        {% if page.portraits and page.portraits.size > 0 %}
+          <div class="portrait-stack" data-interval="{{ page.portrait_interval | default: 10 }}">
+            {% for photo in page.portraits %}
+              <img
+                class="portrait{% if forloop.first %} is-active{% endif %}"
+                src="{{ photo.src | prepend: '/assets/img/' | relative_url }}"
+                alt="{{ photo.alt | default: 'Portrait of William Huang' }}"
+                width="192"
+                height="192"
+                {% unless forloop.first %}
+                  aria-hidden="true"
+                {% endunless %}
+              >
+            {% endfor %}
+          </div>
         {% endif %}
       </header>
 
@@ -77,6 +84,22 @@
           btn.setAttribute('aria-expanded', open);
           btn.textContent = open ? 'Less −' : 'More +';
         });
+      })();
+
+      (function () {
+        var stack = document.querySelector('.portrait-stack');
+        if (!stack) return;
+        var photos = stack.querySelectorAll('.portrait');
+        if (photos.length < 2) return;
+        var seconds = parseFloat(stack.getAttribute('data-interval')) || 10;
+        var current = 0;
+        setInterval(function () {
+          photos[current].classList.remove('is-active');
+          photos[current].setAttribute('aria-hidden', 'true');
+          current = (current + 1) % photos.length;
+          photos[current].classList.add('is-active');
+          photos[current].removeAttribute('aria-hidden');
+        }, seconds * 1000);
       })();
     </script>
   </body>

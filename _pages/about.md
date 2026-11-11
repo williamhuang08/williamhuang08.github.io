@@ -2,7 +2,9 @@
 layout: home
 title: about
 permalink: /
-portrait: iCapital_headshot.jpg
+portraits:
+  - src: portrait_tower.jpg
+    alt: William Huang by a window in front of a glass skyscraper
 links:
   - name: GitHub
     url: https://github.com/williamhuang08
