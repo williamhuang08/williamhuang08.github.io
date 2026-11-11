@@ -207,6 +207,11 @@ h3 a {
   font-style: italic;
 }
 
+.venue strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .sep {
   color: var(--muted);
   margin: 0 8px;
