@@ -4,9 +4,15 @@
 {%- assign num = index | prepend: '0' | slice: -2, 2 -%}
 <article class="entry" data-index="R{{ num }}" data-meta="{{ entry.year }}">
   {% if entry.preview %}
-    <a class="thumbnail" href="{{ link }}" tabindex="-1" aria-hidden="true">
+    {%- capture thumb_class %}thumbnail{% if entry.preview_shape == 'square' %} is-square{% endif %}{% endcapture -%}
+    {%- capture thumb_img -%}
       <img src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}" alt="" loading="lazy">
-    </a>
+    {%- endcapture -%}
+    {% if link %}
+      <a class="{{ thumb_class }}" href="{{ link }}" tabindex="-1" aria-hidden="true">{{ thumb_img }}</a>
+    {% else %}
+      <span class="{{ thumb_class }}" aria-hidden="true">{{ thumb_img }}</span>
+    {% endif %}
   {% else %}
     <span class="thumbnail"></span>
   {% endif %}
