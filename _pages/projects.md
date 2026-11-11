@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: some things i find cool
-nav: true
+description: selected research and engineering projects
+nav: false
 nav_order: 3
-display_categories: [computer vision, reinforcement learning, intelligent robotics, fun]
+display_categories: [intelligent robotics, reinforcement learning, computer vision]
 horizontal: false
 ---
 

@@ -1,52 +1,19 @@
 ---
-
-layout: about
+layout: home
 title: about
 permalink: /
-subtitle: Junior @ Yale '27 | Math + CS
-
-profile:
-  align: right
-  image: iCapital_headshot.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Silliman College</p>
-    <p>Yale University</p>
-    <p>New Haven, CT 06511</p>
-
-news: false # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+portrait: iCapital_headshot.jpg
+links:
+  - name: GitHub
+    url: https://github.com/williamhuang08
+  - name: Scholar
+    url: https://scholar.google.com/citations?user=cinjCSwAAAAJ
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/william-08-huang/
 ---
 
-<div class="typing-container">
-  <h2 id="typing-effect"></h2>
-</div>
+I’m a senior at Yale University studying Computer Science and Mathematics. I want to understand the principles that enable humans and machines to reason and plan in our physical world. I am passionate about how these principles can be applied to develop abstractions of our environment and how we can ground representations in these abstractions to enable generalization in machines. I’m applying to PhD programs for Fall 2027.
 
-<script>
-  const text = "Hello 👋!";
-  const typingSpeed = 100; // milliseconds per character
-  let i = 0;
+<!--more-->
 
-  function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("typing-effect").textContent += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, typingSpeed);
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", typeWriter);
-</script>
-
-> I'm **William**. I'm an avid researcher and developer who is interested in realizing Physical AI.  More specifically, I'm passionate about intelligent robotics and AI for science. More coming soon!
-
-Previously @:
-- **[iCapital](https://icapital.com/)** (Platform Engineering Intern)
-- **[Yale School of Management](https://som.yale.edu/)** (Tobin Undergraduate Research Assistant - under Prof. Wang Tong and Prof K. Sudhir)
-- **[OptoKnowledge Systems Inc.](https://oksi.ai/)** (Applied AI/ML Software Engineer Intern)
-- **[University of Southern California Melady Lab](https://melady.usc.edu/)** (ML Research Intern - under Prof. Yan Liu); as a USC-Meta SURE Fellow.
-- **[University of Southern California Institute for Biomedical Therapeutics](https://ibt.usc.edu/)** (Computer Vision Research Assistant - under Dr. Lan Yue and Prof. Mark Humayun)
-
-Check out some things I have built/am working on: [publications](https://scholar.google.com/citations?user=cinjCSwAAAAJ&hl=en&authuser=1) and [code](https://github.com/williamhuang08).
-
+During my undergrad, I explored abstractions in world models at the [CMU Robotics Institute](https://www.ri.cmu.edu/) with [Benjamin Freed](https://scholar.google.com/citations?user=_RUP_pUAAAAJ&hl=en) and Professor [Howie Choset](https://www.ri.cmu.edu/ri-faculty/howie-choset/). I was also a research intern at [Waabi](https://waabi.ai/research) (formerly Uber ATG), where I worked with [Chris Zhang](https://scholar.google.com/citations?user=d0BhFY0AAAAJ&hl=en) and Professor [Raquel Urtasun](https://www.cs.toronto.edu/~urtasun/) on pre-training for learnable planning.

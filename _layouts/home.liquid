@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include metadata.liquid %}
+    {% if site.icon.size <= 4 %}
+      <link
+        rel="shortcut icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
+      >
+    {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url | bust_file_cache }}">
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="intro">
+        <div class="intro-text">
+          <h1>{{ site.first_name }} {% if site.middle_name %}{{ site.middle_name }} {% endif %}{{ site.last_name }}</h1>
+
+          {% assign bio_parts = content | split: '<!--more-->' %}
+          <div class="bio">
+            {% if bio_parts.size > 1 %}
+              {% assign lead = bio_parts[0] | strip %}
+              {% assign lead_len = lead | size | minus: 4 %}
+              {{ lead | slice: 0, lead_len }}
+              <button class="bio-toggle" type="button" aria-expanded="false" aria-controls="bio-more">More +</button></p>
+              <div class="bio-more" id="bio-more">
+                {{ bio_parts[1] }}
+              </div>
+            {% else %}
+              {{ content }}
+            {% endif %}
+          </div>
+
+          <nav class="links">
+            {% for link in page.links %}
+              <a href="{{ link.url }}">{{ link.name }}</a>
+            {% endfor %}
+          </nav>
+
+          <p class="contact">
+            <span class="label">Contact</span>
+            <a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a>
+          </p>
+        </div>
+
+        {% if page.portrait %}
+          <img
+            class="portrait"
+            src="{{ page.portrait | prepend: '/assets/img/' | relative_url }}"
+            alt="Portrait of {{ site.first_name }} {{ site.last_name }}"
+            width="192"
+            height="192"
+          >
+        {% endif %}
+      </header>
+
+      <section id="research" aria-label="Research">
+        <div class="index-bar">
+          <span class="label">Index</span>
+          <span class="tab is-active">Research <span class="count">{% bibliography_count --query @*[selected=true]* %}</span></span>
+        </div>
+        <div class="entries">
+          {% bibliography --group_by none --query @*[selected=true]* --template pub_index %}
+        </div>
+      </section>
+
+      <footer>Last updated {{ site.time | date: '%B %Y' }}.</footer>
+    </main>
+
+    <script>
+      (function () {
+        var btn = document.querySelector('.bio-toggle');
+        var more = document.getElementById('bio-more');
+        if (!btn || !more) return;
+        btn.addEventListener('click', function () {
+          var open = more.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open);
+          btn.textContent = open ? 'Less −' : 'More +';
+        });
+      })();
+    </script>
+  </body>
+</html>
