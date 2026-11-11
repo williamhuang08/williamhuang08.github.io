@@ -231,10 +231,11 @@ h3 a {
 }
 
 .music-section {
-  margin-top: 32px;
+  margin-top: 40px;
 }
 
-.music-section .index-bar {
+.piece-bar {
+  margin-top: 14px;
   padding: 6px 0;
 }
 
@@ -244,34 +245,15 @@ h3 a {
 
 .pieces {
   list-style: none;
-  margin: 0;
+  margin: 6px 0 0;
   padding: 0;
 }
 
 .piece {
-  display: grid;
-  grid-template-columns: 52px minmax(0, 1fr);
-  column-gap: 16px;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
-.piece::before {
-  content: attr(data-meta);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  line-height: 1.9;
-  color: var(--muted);
-}
-
-.piece-title {
-  margin-right: 8px;
-}
-
-span.piece-title {
-  color: var(--ink);
-}
-
-.composer {
+.dash {
   color: var(--muted);
 }
 

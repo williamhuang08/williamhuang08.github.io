@@ -10,6 +10,8 @@ links:
     url: https://scholar.google.com/citations?user=cinjCSwAAAAJ
   - name: LinkedIn
     url: https://www.linkedin.com/in/william-08-huang/
+  - name: Music
+    url: /music/
 ---
 
 I’m a senior at Yale University studying Computer Science and Mathematics. I want to understand the principles that enable humans and machines to reason and plan in our physical world. I am passionate about how these principles can be applied to develop abstractions of our environment and how we can ground representations in these abstractions to enable generalization in machines. I’m applying to PhD programs for Fall 2027.

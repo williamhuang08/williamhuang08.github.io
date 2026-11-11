@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include site_head.liquid %}
+  </head>
+  <body>
+    <main class="wrap">
+      <p class="back">
+        <a href="{{ '/' | relative_url }}"
+          >← {{ site.first_name }}
+          {{ site.last_name -}}
+        </a>
+      </p>
+      <h1>{{ page.heading | default: page.title }}</h1>
+      <div class="bio">{{ content }}</div>
+
+      {% for instrument in site.data.music.instruments %}
+        <section class="music-section" id="{{ instrument.name | slugify }}" aria-label="{{ instrument.name }}">
+          <h2>{{ instrument.name }}</h2>
+          {% for group in page.groups %}
+            {% assign pieces = instrument[group.key] %}
+            {% if pieces and pieces.size > 0 %}
+              <div class="index-bar piece-bar">
+                <span class="label">{{ group.name }}</span>
+                <span class="count">{{ pieces.size }}</span>
+              </div>
+              <ul class="pieces">
+                {% for piece in pieces %}
+                  <li class="piece">
+                    {% if piece.composer -%}
+                      <span class="composer-name">{{ piece.composer }}</span><span class="dash"> – </span>
+                    {%- endif %}
+                    {% if piece.link %}
+                      <a href="{{ piece.link }}">{{ piece.title }}</a>
+                    {% else %}
+                      {{ piece.title }}
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
+        </section>
+      {% endfor %}
+
+      <footer>Last updated {{ site.time | date: '%B %Y' }}.</footer>
+    </main>
+  </body>
+</html>

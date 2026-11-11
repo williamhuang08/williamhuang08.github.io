@@ -1,0 +1,51 @@
+# Pieces shown on /music/, grouped by instrument.
+# Each piece: composer, title (required), link (optional; makes the title a link).
+
+instruments:
+  - name: Piano
+    played:
+      - composer: Sergei Rachmaninoff
+        title: Piano Concerto No. 2 in C minor, Op. 18
+        link: https://youtu.be/fzMWB_YI7mQ
+      - composer: Frédéric Chopin
+        title: Piano Concerto No. 1 in E minor, Op. 11
+      - composer: Frédéric Chopin
+        title: Polonaise in A-flat major, Op. 53 “Heroic”
+      - composer: Johann Sebastian Bach
+        title: Chromatic Fantasia and Fugue in D minor, BWV 903
+        link: https://youtu.be/syKiRDd15GY
+      - composer: Ludwig van Beethoven
+        title: Piano Sonata No. 21 in C major, Op. 53 “Waldstein”
+      - composer: Frédéric Chopin
+        title: Piano Sonata No. 3 in B minor, Op. 58
+        link: https://youtu.be/MQIEj-TeyX8
+      - composer: Johann Sebastian Bach
+        title: Prelude and Fugue in E major, The Well-Tempered Clavier
+        link: https://youtu.be/W1_kXPQ3beU
+      - composer: Frédéric Chopin
+        title: Scherzo No. 2 in B-flat minor, Op. 31
+      - composer: Frédéric Chopin
+        title: Berceuse in D-flat major, Op. 57
+      - composer: Mikhail Glinka, arr. Mily Balakirev
+        title: The Lark
+      - composer: Frédéric Chopin
+        title: Étude in C minor, Op. 10, No. 12 “Revolutionary”
+      - composer: Frédéric Chopin
+        title: Étude in A minor, Op. 25, No. 11 “Winter Wind”
+    learning:
+      - composer: Pyotr Ilyich Tchaikovsky
+        title: Piano Concerto No. 1 in B-flat minor, Op. 23
+      - composer: Franz Liszt
+        title: Hungarian Rhapsody No. 2 in C-sharp minor, S. 244/2
+
+  - name: Violin
+    played:
+      - composer: Max Bruch
+        title: Violin Concerto No. 1 in G minor, Op. 26 (1st and 3rd movements)
+      - composer: Fritz Kreisler
+        title: Praeludium and Allegro
+      - composer: Pablo de Sarasate
+        title: Zigeunerweisen, Op. 20
+    learning:
+      - composer: Pablo de Sarasate
+        title: Carmen Fantasy, Op. 25
