@@ -203,6 +203,11 @@ h1 {
   object-position: top;
 }
 
+.thumbnail.is-natural img {
+  aspect-ratio: auto;
+  height: auto;
+}
+
 .thumbnail.is-square img {
   aspect-ratio: 1 / 1;
   object-position: center;
@@ -225,6 +230,11 @@ h3 a {
 
 .authors strong {
   font-weight: 700;
+}
+
+.authors .annotation {
+  margin-left: 0.5em;
+  font-size: 0.85em;
 }
 
 .venue {
